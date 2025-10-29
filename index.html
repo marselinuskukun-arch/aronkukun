@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://2wn969tj-3000.asse.devtunnels.ms/" type="image/png">
+    <title>Untukmu Tuan Putriku ❤️</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="emoji-container">
+            <div class="emoji love-emoji">💕</div>
+            <div class="emoji heart-emoji">❤️</div>
+            <div class="emoji happy-emoji">😊</div>
+            <div class="emoji kiss-emoji">😘</div>
+            <div class="emoji sparkle-emoji">✨</div>
+        </div>
+        <h2 class="loading-text">Memuat Cinta Untukmu...</h2>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="title">💖 Untukmu Tuan Putriku 💖</h1>
+                <p class="subtitle"> Ini No Buat Spesial Buat Nona</p>
+            </header>
+
+            <!-- Menu Cards -->
+            <div class="menu-grid">
+                <!-- Perasaan Hari Ini -->
+                <div class="menu-card" id="feelings-card">
+                    <div class="card-icon">💭</div>
+                    <h3>Perasaan Nona Hari Ini</h3>
+                    <p>Ceritakan bagaimana perasaan Nona hari ini sayang</p>
+                    <button class="menu-btn" onclick="openFeelingsModal()">Sampaikan Perasaan</button>
+                </div>
+
+                <!-- Upload Foto -->
+                <div class="menu-card" id="photo-card">
+                    <div class="card-icon">📸</div>
+                    <h3>Kirim Foto Cantik Nona Hari Ini</h3>
+                    <p>Bagikan momen tercantik Nona hari ini</p>
+                    <button class="menu-btn" onclick="openPhotoModal()">Upload Foto</button>
+                </div>
+
+                <!-- Pesan Rahasia -->
+                <div class="menu-card" id="secret-card">
+                    <div class="card-icon">💌</div>
+                    <h3>Klik Sini Nona</h3>
+                    <p>Ada sesuatu yang spesial Buat Nona</p>
+                    <button class="menu-btn secret-btn" onclick="openSecretMessage()">Buka Pesan Rahasia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Perasaan -->
+    <div id="feelings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('feelings-modal')">&times;</span>
+            <h2>💕 Bagaimana perasaan Nona Hari Ini?</h2>
+            <form id="feelings-form">
+                <div class="mood-selector">
+                    <label>Pilih mood kamu:</label>
+                    <div class="mood-options">
+                        <button type="button" class="mood-btn" data-mood="bahagia">😊 Bahagia</button>
+                        <button type="button" class="mood-btn" data-mood="sedih">😢 Sedih</button>
+                        <button type="button" class="mood-btn" data-mood="excited">🤩 Excited</button>
+                        <button type="button" class="mood-btn" data-mood="lelah">😴 Lelah</button>
+                        <button type="button" class="mood-btn" data-mood="rindu">🥺 Rindu</button>
+                    </div>
+                </div>
+                <textarea id="feelings-text" placeholder="Ceritakan lebih detail tentang perasaan Nona hari ini sayang..."></textarea>
+                <button type="submit" class="submit-btn">Kirim Perasaan 💕</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Upload Foto -->
+    <div id="photo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('photo-modal')">&times;</span>
+            <h2>📸 Kirim Foto Cantikmu</h2>
+            <div class="upload-area" id="upload-area">
+                <div class="upload-icon">📷</div>
+                <p>Klik atau drag foto kesini</p>
+                <input type="file" id="photo-input" accept="image/*" multiple>
+            </div>
+            <div id="photo-preview" class="photo-preview"></div>
+            <button id="send-photo-btn" class="submit-btn" style="display: none;">Kirim Foto 💕</button>
+        </div>
+    </div>
+
+    <!-- Modal Pesan Rahasia -->
+    <div id="secret-modal" class="modal">
+        <div class="modal-content secret-content">
+            <span class="close" onclick="closeModal('secret-modal')">&times;</span>
+            <div class="secret-message">
+                <h2>💌 Pesan Khusus Untukmu</h2>
+                <div class="love-letter">
+                    <p class="letter-text">
+                        Hai tuan putriku yang paling cantik di dunia! 💕
+                        <br><br>
+                        No minta maaf ya sayang atas no kesalahan no ini hari sayang
+                        Bukan maxut no buat nona sakit hati sayang tapi nona ne bisa omong no baik baik sayang nona selalu kasar dengan no
+                        <br><br>
+                        Nona jangan marah jangan kecil hati ya nona no ne ada niat buat marah nona sayang jangan marah ee sayang 
+                        no marah karena no udah hapus pesan supaya no jangan cht lagi dengan mereka tapi nona pikiran lain dengan no
+                        <br><br>
+                        Nona Pasti kecapean kan sayang hari ini,jangan lupa istirahat ya sayang pulang ganti baju cuci kaki tangan ju istirahat ya sayang
+                        no sayang nona
+                        <br><br>
+                        I love you tuan putriku💖✨
+                        <br><br>
+                        <em>- Dari orang yang paling sayang nona Aron Kukun -</em>
+                    </p>
+                </div>
+                <div class="floating-hearts">
+                    <div class="heart">💕</div>
+                    <div class="heart">💖</div>
+                    <div class="heart">💗</div>
+                    <div class="heart">💓</div>
+                    <div class="heart">💝</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle">💕</div>
+        <div class="particle">💖</div>
+        <div class="particle">✨</div>
+        <div class="particle">💫</div>
+        <div class="particle">🌟</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
